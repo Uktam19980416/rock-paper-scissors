@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="icon" type="image/x-icon"
+    href="/images/eegg.png">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="header_game_name">Rock Paper Scissors</h1>
+    </header>
+    <section class="section">
+      <div class="section_title">
+        <h2 class="section_title_first_win">First To 5 Wins</h2>
+      </div>
+
+      <div class="section_competitor">
+        <img 
+          class="person_image" 
+          src="/images/person.png" 
+          alt="Person"
+        >
+        <h2 class="section_competitor_name">
+          Person 
+          <img 
+            class="section_competitor_vs" 
+            src="/images/vs.png" 
+            alt="VS"
+          >
+          Computer
+        <img 
+          class="computer_image" 
+          src="/images/computer.png" 
+          alt="Computer"
+        >
+        </h2>
+      </div>
+      <div class="section_game">
+          <img 
+            class="rock img" 
+            src="/images/rock2.png" 
+            alt="rock"
+          >
+          <img 
+            class="paper img" 
+            src="/images/paper2.png" 
+            alt="paper"
+          >
+          <img 
+            class="scissors img" 
+            src="/images/scissor.png" 
+            alt="scissors"
+          >
+      </div>
+      <div class="section_score">
+        <p class="section_score_player">Person: 
+          <span class="p_score">0</span>
+        </p>
+        <p class="section_score_computer">Computer:
+          <span class="c_score">0</span>
+        </p>
+      </div>
+      <div class="section_result">
+        <p class="result_text"></p>
+      </div>
+    </section>
+    <div class="restart_game">
+      <button type="button" class="restart_button">Restart Game</button>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

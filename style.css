@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Alegreya SC', serif;
+}
+
+body {
+  background: url('/images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.header_game_name {
+  word-spacing: 1.5rem;
+  font-size: 60px;
+  background: -webkit-linear-gradient(rgb(5, 63, 92), #07a897);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section_title,
+.section_competitor,
+.section_game,
+.section_result,
+.restart_game {
+  display: flex;
+  justify-content: center;
+}
+.section_title_first_win {
+  font-size: 55px;
+  background: -webkit-linear-gradient(rgb(12, 56, 113), #230157);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section_competitor_name {
+  font-size: 45px;
+  background: -webkit-linear-gradient(rgb(12, 56, 113), #230157);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.person_image,
+.computer_image {
+  width: 80px;
+  height: 80px;
+}
+.section_competitor_vs {
+  width: 40px;
+  height: 40px;
+}
+.section_game {
+  padding-top: 20px;
+}
+.rock,
+.paper,
+.scissors {
+  width: 100px;
+  height: 100px;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+.section_score {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section_score_player,
+.section_score_computer,
+.result_text {
+  padding-top: 20px;
+  font-size: 40px;
+}
+.result_text {
+  transition: 1s ease-in-out;
+}
+.restart_button {
+  padding: 1rem 1.5rem;
+  border: 2px solid #888801;
+  border-radius: 5px;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.restart_button:hover {
+  background: -webkit-linear-gradient(rgb(12, 56, 113), #230157);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .section {
+    padding-top: 50px;
+  }
+  .header_game_name,
+  .section_title_first_win,
+  .section_score_player,
+  .section_score_computer{
+    font-size: 30px;
+  }
+  .person_image,
+  .computer_image,
+  .section_competitor_vs {
+    width: 35px;
+    height: 35px;
+  }
+  .section_competitor_name {
+    font-size: 30px;
+  }
+  .img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .section {
+    padding-top: 50px;
+  }
+  .header_game_name,
+  .section_title_first_win,
+  .section_score_player,
+  .section_score_computer, 
+  .section_competitor_name {
+    font-size: 20px;
+  }
+  .person_image,
+  .computer_image,
+  .section_competitor_vs {
+    width: 25px;
+    height: 25px;
+  }
+  .section_competitor_name {
+    font-size: 20px;
+  }
+  .img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
